@@ -4,18 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semaforo</title>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/commons.css">
+    <link rel="stylesheet" href="css/regole.css">
+    <link rel="stylesheet" href="css/semaforo.css">
+    <link rel="stylesheet" href="css/botton.css">
+    <style>
+        body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+      </style>
+
 </head>
-<body>
-    <script src="../semaforo/static/js/p5.min.js"></script>
-    <script>
-         function setup() {
-            createCanvas(500, 500)
-            background(250, 0, 0)
-            angleMode(DEGREES)
-        }
+<body id="he"> 
+    
+    <h2 class="bakbak-one-regular fs-50">Metti alla prova il tuo tempo di reazione</h2>
+    <div class="regole bakbak-one-regular">
+    <h3>Testa il tuo tempo di reazione.
+      Clicca il bottone qui in basso quando sei pronto per iniziare, aspetta che le luci diventano verdi e clicca il più velocemente possibile sul bottone.
+      </h3>
+    </div>
+    <div class="semaforo  flex-row justify-content-center align-items-center">
+      <div class="black-box">
+          <div class="light-gray " id="green-1"></div>
+          <div class="light-gray " id="green-1-2"></div>
+          <div class="light-gray " id="red-1"></div>
+          <div class="light-gray " id="red-1-2"></div>
+      </div>
+      <div class="black-box">
+        <div class="light-gray " id="green-2"></div>
+        <div class="light-gray " id="green-2-2"></div>
+        <div class="light-gray" id="red-2"></div>
+        <div class="light-gray" id="red-2-2"></div>
+    </div>
+    <div class="black-box">
+        <div class="light-gray " id="green-3"></div>
+        <div class="light-gray " id="green-3-2"></div>
+        <div class="light-gray " id="red-3"></div>
+        <div class="light-gray " id="red-3-2"></div>
+    </div>
+    <div class="black-box">
+        <div class="light-gray " id="green-4"></div>
+        <div class="light-gray " id="green-4-2"></div> 
+        <div class="light-gray " id="red-4"></div>
+        <div class="light-gray " id="red-4-2"></div>   
+     </div>
+     
+    </div>
+    <h5 class="bakbak-one-regular fs-20 "id="result"></h5>
+    <div>
+        <button class="bottone bakbak-one-regular fs-32" id="btn">Start</button>
+        
+
+    </div>
+    
+    
+
+
     </script>
     
-    
+    <script src="static/js/script.js    "></script>
 </body>
 </html>
